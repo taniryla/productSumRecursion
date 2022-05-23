@@ -55,16 +55,20 @@
 function productSum(arr){
   let total = 0;
   let depth = 1;
+	// base case
   for (let i in arr) {
+		// base case if there are no more nested arrays end the recursion
+		if (typeof arr[i] !== 'array' | 
+			 integer') return total;
+
     if (typeof arr[i]) === 'integer'){
       total += arr[i];
     }
-    else if (arr[i].length === 0){
-      productSum(arr[i+1]);
-      depth++;
+    else if (typeof arr[i] === 'array'){
       let special = (arr[i] * depth) * (arr[i+1] + arr[i+2]);
       total += special;
+			depth++;
+			productSum(arr[i+1]);
     }
   }
-  return total; 
 }
