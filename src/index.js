@@ -60,7 +60,7 @@ function productSum(arr){
       total += arr[i];
     }
     else if (arr[i].length === 0){
-      productSum(arr[i]);
+      productSum(arr[i+1]);
       depth++;
       let special = (arr[i] * depth) * (arr[i+1] + arr[i+2]);
       total += special;
