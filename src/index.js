@@ -61,12 +61,12 @@ function productSum(arr, depth = 1){
 
     if (Array.isArray(arr[i]) === true){
       let special = (arr[i] * depth) * (arr[i+1] + arr[i+2]);
-      total += productSum(i + 1, depth++);
+      total += productSum(i, depth++);
     }
 
-    else if (typeof arr[i]) === 'integer'){
-      total += arr[i];
+    else if {
+      total += i;
     }
-   
   }
+  return total + depth; 
 }
