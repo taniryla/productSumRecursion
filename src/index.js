@@ -58,12 +58,12 @@ function productSum(arr, depth = 1){
   for (let i in arr) {
 		// base case if there are no more nested arrays end the recursion
 		if (typeof arr[i] !== 'array' | 
-			 integer') return total;
+			 'integer') return total;
 
     if (typeof arr[i]) === 'integer'){
       total += arr[i];
     }
-    else if (typeof arr[i] === 'array'){
+    else if (Array.isArray(arr[i]) === true){
       let special = (arr[i] * depth) * (arr[i+1] + arr[i+2]);
       total += special;
 			productSum(arr[i+1], depth++);
