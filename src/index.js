@@ -59,13 +59,14 @@ function productSum(arr, depth = 1){
 		// base case if there are no more nested arrays end the recursion
     if (typeof arr[i].length === 0) return total;
 
-    if (typeof arr[i]) === 'integer'){
+    if (Array.isArray(arr[i]) === true){
+      let special = (arr[i] * depth) * (arr[i+1] + arr[i+2]);
+      total += productSum(i + 1, depth++);
+    }
+
+    else if (typeof arr[i]) === 'integer'){
       total += arr[i];
     }
-    else if (Array.isArray(arr[i]) === true){
-      let special = (arr[i] * depth) * (arr[i+1] + arr[i+2]);
-      total += special;
-			productSum(arr[i+1], depth++);
-    }
+   
   }
 }
