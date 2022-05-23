@@ -8,12 +8,17 @@ return the product sum
 special array 
 
 3. Can you restate the problem in your own words?
+sum of the special array multiplied times depth
 
 4. Can the unknown be determined from the data inputs?
-
+yes 
 
 5. Is the data inputs sufficient to determine the unknown? Insufficient? Redundant? Contradictory? 
+sufficient 
+
 6. How should I label important pieces of data input that are a part of the problem?
+
+
 7. Draw a figure. Introduce suitable notation.
 
 Step Two (Plan). Come up with concrete examples to help you understand the problem better. Find a connection between the data inputs and the unknown. You may be obliged to consider auxiliary problems if an immediate connection cannot be found. 
