@@ -59,7 +59,7 @@ function productSum(arr){
     if (typeof arr[i]) === 'integer'){
       total += arr[i];
     }
-    else if (typeof arr[i] === 'array'){
+    else if (arr[i].length === 0){
       productSum(arr[i]);
       depth++;
       let special = (arr[i] * depth) * (arr[i+1] + arr[i+2]);
