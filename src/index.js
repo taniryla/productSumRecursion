@@ -57,8 +57,7 @@ function productSum(arr, depth = 1){
 	// base case
   for (let i in arr) {
 		// base case if there are no more nested arrays end the recursion
-		if (typeof arr[i] !== 'array' | 
-			 'integer') return total;
+    if (typeof arr[i].length === 0) return total;
 
     if (typeof arr[i]) === 'integer'){
       total += arr[i];
