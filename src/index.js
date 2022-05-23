@@ -2,9 +2,16 @@ Remember the acronym UPS check
 
 Step One (Understand). We have to understand the problem.
 1. What is the unknown?
+return the product sum 
+
 2. What are the data inputs?
+special array 
+
 3. Can you restate the problem in your own words?
+
 4. Can the unknown be determined from the data inputs?
+
+
 5. Is the data inputs sufficient to determine the unknown? Insufficient? Redundant? Contradictory? 
 6. How should I label important pieces of data input that are a part of the problem?
 7. Draw a figure. Introduce suitable notation.
