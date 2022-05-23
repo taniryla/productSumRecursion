@@ -54,12 +54,16 @@
 
 function productSum(arr){
   let total = 0;
+  let depth = 1;
   for (let i in arr) {
     if (typeof arr[i]) === 'integer'){
       total += arr[i];
     }
     else if (typeof arr[i] === 'array'){
       productSum(arr[i]);
+      depth++;
+      let special = (arr[i] * depth) * (arr[i+1] + arr[i+2]);
+      total += special;
     }
   }
   return total; 
