@@ -52,9 +52,8 @@
 // 20.  Can you improve the performance? 
 // 21.   How have other people solved this problem?
 
-function productSum(arr){
+function productSum(arr, depth = 1){
   let total = 0;
-  let depth = 1;
 	// base case
   for (let i in arr) {
 		// base case if there are no more nested arrays end the recursion
@@ -67,8 +66,7 @@ function productSum(arr){
     else if (typeof arr[i] === 'array'){
       let special = (arr[i] * depth) * (arr[i+1] + arr[i+2]);
       total += special;
-			depth++;
-			productSum(arr[i+1]);
+			productSum(arr[i+1], depth++);
     }
   }
 }
